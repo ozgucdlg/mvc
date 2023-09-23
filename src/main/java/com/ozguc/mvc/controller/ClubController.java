@@ -2,6 +2,7 @@ package com.ozguc.mvc.controller;
 
 
 import com.ozguc.mvc.dto.ClubDto;
+import com.ozguc.mvc.models.Club;
 import com.ozguc.mvc.service.abstracts.ClubService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,7 +17,6 @@ public class ClubController {
     public ClubService clubService;
 
     @Autowired
-
     public ClubController(ClubService clubService) {
         this.clubService = clubService;
     }
@@ -27,5 +27,13 @@ public class ClubController {
 
         model.addAttribute("clubs", clubs);
         return "clubs-list";
+    }
+
+    @GetMapping("/clubs/new")
+    public  String createClubForm(Model model){
+        Club club= new Club();
+        model.addAttribute("club", club);
+
+        return "clubs-create";
     }
 }

@@ -1,10 +1,12 @@
 package com.ozguc.mvc.models;
 
 
+
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
+import org.springframework.data.annotation.Id;
 
 import java.time.LocalDateTime;
 
