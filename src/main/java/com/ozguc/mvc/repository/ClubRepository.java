@@ -1,6 +1,5 @@
 package com.ozguc.mvc.repository;
 
-import com.ozguc.mvc.models.Club;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
