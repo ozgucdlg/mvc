@@ -1,7 +1,7 @@
 package com.ozguc.mvc.service.abstracts;
 
 import com.ozguc.mvc.dto.ClubDto;
-import  com.ozguc.mvc.models.Club;
+import com.ozguc.mvc.model.Club;
 
 import java.util.List;
 

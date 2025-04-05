@@ -5,7 +5,7 @@ import com.ozguc.mvc.repository.ClubRepository;
 import com.ozguc.mvc.service.abstracts.ClubService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ozguc.mvc.models.Club;
+import com.ozguc.mvc.model.Club;
 import java.util.List;
 import java.util.stream.Collectors;
 
